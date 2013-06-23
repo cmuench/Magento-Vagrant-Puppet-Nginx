@@ -1,16 +1,14 @@
 Magento-Vagrant-Puppet-Nginx
 ============================
 
-Installs:
-
+## Installs
 * Magento
 * MySQL
 * PHP
 * Nginx
 * n98-magerun
 
-Setup:
-
+## Setup
 ``` sh
 git submodule init
 git submodule update
