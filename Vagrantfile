@@ -10,7 +10,7 @@ Vagrant::Config.run do |config|
 
   config.vm.share_folder "v-data", "/vagrant_data", "data"
 
-  #config.vm.provision :shell, :inline => "sudo apt-get update && sudo apt-get install puppet -y"
+  config.vm.provision :shell, :inline => "sudo apt-get update && sudo apt-get install puppet -y"
 
   config.vm.provision :puppet do |puppet|
      puppet.manifests_path = "puppet/manifests"
