@@ -5,6 +5,7 @@ Magento-Vagrant-Puppet-Nginx
 * Magento
 * MySQL
 * PHP
+* PHP-FPM
 * Nginx
 * n98-magerun
 
