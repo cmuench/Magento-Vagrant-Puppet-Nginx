@@ -1,5 +1,8 @@
 node default {
 
+    class { "apt":
+        always_
+
     Exec { path => [ "/bin/", "/sbin/", "/usr/bin/", "/usr/sbin/", "/usr/local/bin", "/usr/local/sbin"] }
 
     host { "magento.local":
