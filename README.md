@@ -13,15 +13,28 @@ Magento-Vagrant-Puppet-Nginx
 ## Setup
 
 ``` sh
-   git submodule init
-   git submodule update
-   vagrant up
+git submodule init
+git submodule update
+vagrant up
+```
 
 Modify puppet/manifests/base.pp
 
+
 ``` puppet
-   class { "magento":
-     install_magento     => true,
-     magento_version     => "magento-ce-1.6.2.0",
-     install_sample_data => true
-   }
+class { "magento":
+  install_magento     => true,
+  magento_version     => "magento-ce-1.6.2.0",
+  install_sample_data => true
+}
+```
+
+Valid Magento Versions:
+
+* magento-ce-1.6.2.0
+* magento-ce-1.7.0.2
+* mageplus-master
+* magento-mirror-1.4.2.0
+* magento-mirror-1.5.1.0
+* magento-mirror-1.6.2.0
+* magento-ce-2.0.0.0-dev
