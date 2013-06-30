@@ -9,7 +9,7 @@ node default {
     package { 'vim': ensure => installed }
     package { 'wget': ensure => latest }
     package { 'curl': ensure => latest }
-
+    include git
 
     # Installs Magento
     #
@@ -24,7 +24,7 @@ node default {
     #   magento-ce-2.0.0.0-dev
     class { "magento":
       install_magento     => true,
-      magento_version     => "magento-ce-1.6.2.0",
+      magento_version     => "magento-ce-1.7.0.2",
       install_sample_data => true
     }
 }
