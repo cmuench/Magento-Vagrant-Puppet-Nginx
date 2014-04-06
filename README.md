@@ -59,8 +59,8 @@ Password: password123
 To change the admin login you can use n98-magerun.
 
 ``` bash
-   vagrant ssh
-   cd /vagrant
-   n98-magerun.phar admin:user:change-password admin mypassword
+vagrant ssh
+cd /vagrant
+n98-magerun.phar admin:user:change-password admin mypassword
 ```   
 
