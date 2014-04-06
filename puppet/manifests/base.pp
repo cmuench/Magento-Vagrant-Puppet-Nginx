@@ -24,7 +24,7 @@ node default {
     #   magento-ce-2.0.0.0-dev
     class { "magento":
       install_magento     => true,
-      magento_version     => "magento-ce-1.7.0.2",
+      magento_version     => "magento-ce-1.8.1.0",
       install_sample_data => true
     }
 }
