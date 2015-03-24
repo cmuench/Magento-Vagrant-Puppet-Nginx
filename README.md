@@ -34,12 +34,13 @@ Valid Magento Versions:
 * magento-ce-1.6.2.0
 * magento-ce-1.7.0.2
 * magento-ce-1.8.1.0
+* magento-ce-1.9.1.0
 * mageplus-master
 * magento-mirror-1.4.2.0
 * magento-mirror-1.5.1.0
 * magento-mirror-1.6.2.0
 * magento-ce-2.0.0.0-dev
-* 
+
 ## Frontend
 
 After Installation you should can access the shop frontend over port 8080.

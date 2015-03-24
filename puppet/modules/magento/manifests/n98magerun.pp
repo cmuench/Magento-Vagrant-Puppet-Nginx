@@ -1,6 +1,6 @@
 class magento::n98magerun(
   $install_magento     = true,
-  $magento_version     = "magento-ce-1.7.0.2",
+  $magento_version     = "magento-ce-1.9.1.0",
   $install_sample_data = true
 ) {
     class { "::n98magerun": }
