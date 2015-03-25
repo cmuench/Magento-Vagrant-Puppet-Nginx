@@ -17,6 +17,7 @@ node default {
     #
     #   magento-ce-1.6.2.0
     #   magento-ce-1.7.0.2
+    #   magento-ce-1.9.1.0
     #   mageplus-master
     #   magento-mirror-1.4.2.0
     #   magento-mirror-1.5.1.0
@@ -24,7 +25,7 @@ node default {
     #   magento-ce-2.0.0.0-dev
     class { "magento":
       install_magento     => true,
-      magento_version     => "magento-ce-1.8.1.0",
+      magento_version     => "magento-ce-1.9.1.0",
       install_sample_data => true
     }
 }
