@@ -1,14 +1,15 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-Vagrant::Config.run do |config|
+VAGRANTFILE_API_VERSION = "2"
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #config.vm.host_name = "foo"
   config.vm.box = "precise64"
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
-  config.vm.forward_port 80, 8080
+  config.vm.network "forwarded_port", guest: 80, host: 8080
 
-  config.vm.share_folder "v-data", "/vagrant_data", "data"
+  config.vm.synced_folder "data", "/vagrant_data"
 
   config.vm.provision :shell, :inline => "sudo apt-get update && sudo apt-get install puppet -y"
 
