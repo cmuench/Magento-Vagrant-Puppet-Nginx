@@ -1,6 +1,9 @@
-class magento::php_fpm inherits magento::php {
+class magento::php_fpm(
+    $user  = "magento",
+    $group = "magento"
+) inherits magento::php {
     php::fpm::pool { 'www':
-        user  => "vagrant",
-        group => "vagrant"
+        user  => $user,
+        group => $group
     }
 }
